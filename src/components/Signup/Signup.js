@@ -85,7 +85,7 @@ function Signup({ onSignup }) {
           <p>
             Already have an account?{" "}
             <span>
-              <Link to="/">Login</Link>
+              <Link to="/MyFitnesspal">Login</Link>
             </span>
           </p>
         </div>

@@ -21,7 +21,7 @@ function CollapsibleExample({ user, ...props }) {
       signOut(auth).then(() => {
         setIsLoggedIn(false);
         console.log("User logged out successfully!");
-        navigate("/");
+        navigate("/MyFitnesspal");
       });
     };
   return (

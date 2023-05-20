@@ -24,7 +24,7 @@ function App() {
       
       <Router>
         <Routes>
-          <Route path="/" element={<Login />} />
+          <Route path="/MyFitnesspal" element={<Login />} />
           <Route path="/signup" element={<Signup onSignup={handleSignup} />} />
           <Route path="/home" element={<Home values={values}/>}  />
             </Routes>

@@ -18,7 +18,7 @@ function Home(props) {
       if (loading) return;
   
       if (!user) {
-        navigate("/");
+        navigate("/MyFitnesspal"yFitnesspal");
       } 
     }, [user, loading, navigate]);
   
