@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/MyFitnesspal/static/css/main.ac4c38ac.css",
-    "main.js": "/MyFitnesspal/static/js/main.aebb2671.js",
+    "main.js": "/MyFitnesspal/static/js/main.a24e3fb8.js",
     "index.html": "/MyFitnesspal/index.html",
     "main.ac4c38ac.css.map": "/MyFitnesspal/static/css/main.ac4c38ac.css.map",
-    "main.aebb2671.js.map": "/MyFitnesspal/static/js/main.aebb2671.js.map"
+    "main.a24e3fb8.js.map": "/MyFitnesspal/static/js/main.a24e3fb8.js.map"
   },
   "entrypoints": [
     "static/css/main.ac4c38ac.css",
-    "static/js/main.aebb2671.js"
+    "static/js/main.a24e3fb8.js"
   ]
 }
