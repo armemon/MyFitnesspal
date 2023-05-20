@@ -51,7 +51,7 @@ function Signup({ onSignup }) {
   return (
     <div className={styles.container}>
       <div className={styles.innerBox}>
-      <img src="/myfitness.png" alt="image" className={styles.logo } />
+      <img src="https://github.com/armemon/MyFitnesspal/blob/gh-pages/myfitness.png" alt="logo" className={styles.logo } />
 
         <h1 className={styles.heading}>Signup</h1>
 
