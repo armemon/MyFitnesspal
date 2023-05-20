@@ -50,6 +50,7 @@ function Login() {
 
         <InputControl
           label="Email"
+          type="email"
           onChange={(event) =>
             setValues((prev) => ({ ...prev, email: event.target.value }))
           }
@@ -57,6 +58,7 @@ function Login() {
         />
         <InputControl
           label="Password"
+          type="password"
           onChange={(event) =>
             setValues((prev) => ({ ...prev, pass: event.target.value }))
           }
