@@ -45,7 +45,7 @@ function Login() {
   return (
     <div className={styles.container}>
       <div className={styles.innerBox}>
-        <img src="https://github.com/armemon/MyFitnesspal/blob/gh-pages/myfitness.png" alt="logo" className={styles.logo } />
+        <img src="https://raw.githubusercontent.com/armemon/MyFitnesspal/gh-pages/myfitness.png" alt="logo" className={styles.logo } />
         <h1 className={styles.heading}>Login</h1>
 
         <InputControl
