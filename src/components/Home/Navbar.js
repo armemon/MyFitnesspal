@@ -30,7 +30,7 @@ function CollapsibleExample({ user, ...props }) {
               <Navbar.Brand href="#home"><img src="https://raw.githubusercontent.com/armemon/MyFitnesspal/gh-pages/myfitness.png" alt="logo" style={{ height: "50px", padding: "0", margin: "0" }}/></Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
               <Navbar.Collapse>
-              <Navbar.Brand className="ms-auto">{ props.values.name ? `Welcome - ${props.name}` : user.displayName ? `Welcome - ${user.displayName}` : "nii"}</Navbar.Brand>
+              <Navbar.Brand className="ms-auto">{ props.values.name ? `Welcome - ${props.name}` : user.displayName ? `Hi - ${user.displayName}` : "Hi"}</Navbar.Brand>
                   
                   <Nav className="ms-auto">
                       <Nav.Link className="justify-content-end" style={{ color: "white" }} eventKey={2} onClick={handleLogout}>Logout
