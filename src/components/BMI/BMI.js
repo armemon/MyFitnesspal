@@ -28,6 +28,7 @@ const BMI = () => {
         <input
           type="number"
           value={weight}
+          min="0"
           onChange={(e) => setWeight(e.target.value)}
         />
       </div>
@@ -37,6 +38,7 @@ const BMI = () => {
         <input
           type="number"
           value={height}
+          min="0"
           onChange={(e) => setHeight(e.target.value)}
         />
       </div>

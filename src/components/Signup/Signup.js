@@ -10,7 +10,7 @@ import styles from "./Signup.module.css";
 
 function Signup({ onSignup }) {
   const navigate = useNavigate();
-  const [user, loading, error] = useAuthState(auth);
+  const [user, loading ] = useAuthState(auth);
   const [values, setValues] = useState({
     name: "",
     email: "",
