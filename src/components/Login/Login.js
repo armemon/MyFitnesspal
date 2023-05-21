@@ -18,7 +18,7 @@ function Login() {
   useEffect(() => {
     if (loading) return;
     if (user) {
-      navigate("/home");
+      navigate("/MyFitnesspal/home");
     }
   }, [user, loading]);
   const [errorMsg, setErrorMsg] = useState("");
@@ -35,7 +35,7 @@ function Login() {
     signInWithEmailAndPassword(auth, values.email, values.pass)
       .then(async (res) => {
         setSubmitButtonDisabled(false);
-        navigate("/home");
+        navigate("/MyFitnesspal/home")
       })
       .catch((err) => {
         setSubmitButtonDisabled(false);
@@ -73,7 +73,7 @@ function Login() {
           <p>
             Already have an account?{" "}
             <span>
-              <Link to="/signup">Sign up</Link>
+              <Link to="/MyFitnesspal/signup">Sign up</Link>
             </span>
           </p>
         </div>

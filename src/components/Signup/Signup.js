@@ -19,7 +19,7 @@ function Signup({ onSignup }) {
   useEffect(() => {
     if (loading) return;
     if (user) {
-      navigate("/home");
+      navigate("/MyFitnesspal/home");
     }
   }, [user, loading]);
   const [errorMsg, setErrorMsg] = useState("");
@@ -40,7 +40,7 @@ function Signup({ onSignup }) {
         await updateProfile(user, {
           displayName: values.name,
         });
-        navigate("/home");
+        navigate("/MyFitnesspal/home");
       })
       .catch((err) => {
         setSubmitButtonDisabled(false);
