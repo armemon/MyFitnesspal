@@ -6,6 +6,13 @@
     background-color: #f2f2f2;
     border-radius: 5px;
   }
+
+  @media (max-width: 530px) {
+    .bmi-container {
+      margin-top: 30px;
+      min-width: 330px;
+  }
+  }
   
   .input-group {
     margin-bottom: 20px;

@@ -6,7 +6,11 @@
     border: 1px solid #ccc;
     border-radius: 4px;
   }
-  
+  @media (max-width: 530px) {
+    .food-calories-container {
+      min-width: 330px;
+  }
+  }
   .calculator-title {
     font-size: 24px;
     font-weight: bold;

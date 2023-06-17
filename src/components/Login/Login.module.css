@@ -27,6 +27,11 @@
   gap: 30px;
 }
 
+@media (max-width: 430px) {
+  .innerBox {
+    min-width: 330px;
+}
+}
 .footer {
   display: flex;
   flex-direction: column;
