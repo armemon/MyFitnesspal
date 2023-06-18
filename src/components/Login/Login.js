@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import { signInWithEmailAndPassword } from "firebase/auth";
+import { signInWithEmailAndPassword, GoogleAuthProvider,
+  signInWithPopup} from "firebase/auth";
 import { useAuthState } from "react-firebase-hooks/auth";
 
 import InputControl from "../InputControl/InputControl";
@@ -13,7 +14,8 @@ function Login() {
     email: "",
     pass: "",
   });
-  const [user, loading ] = useAuthState(auth);
+  const [user, loading] = useAuthState(auth);
+  const googleProvider = new GoogleAuthProvider();
   const navigate = useNavigate();
   useEffect(() => {
     if (loading) return;
@@ -42,6 +44,24 @@ function Login() {
         setErrorMsg(err.message);
       });
   };
+  const signInWithGoogle = async () => {
+    const res = await signInWithPopup(auth, googleProvider)
+      .then(async (res) => {
+        setSubmitButtonDisabled(false);
+        const user = res.user;
+        // await updateProfile(user, {
+        //   uid: user.uid,
+        //   displayName: user.displayName,
+        //   authProvider: "google",
+        //   email: user.email,
+        // });
+        navigate("/MyFitnesspal/home");
+      })
+      .catch((err) => {
+        setSubmitButtonDisabled(false);
+        setErrorMsg(err.message);
+      });
+  }
   return (
     <div className={styles.container}>
       <div className={styles.innerBox}>
@@ -70,13 +90,16 @@ function Login() {
           <button disabled={submitButtonDisabled} onClick={handleSubmission}>
             Login
           </button>
+          <button className={styles.logingoogle} onClick={signInWithGoogle}>
+          Login with <img width="26" height="26" src="https://img.icons8.com/color/48/google-logo.png" alt="google-logo"/>
+        </button>
           <p>
             <span>
           <Link to="/MyFitnesspal/reset">Forgot Password?</Link>
             </span>
           </p>
           <p>
-            Already have an account?{" "}
+            Don't have an Account?{" "}
             <span>
               <Link to="/MyFitnesspal/signup">Sign up</Link>
             </span>

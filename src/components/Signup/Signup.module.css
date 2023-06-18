@@ -22,7 +22,7 @@ margin: auto;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 20px;
 }
 
 @media (max-width: 430px) {
@@ -34,7 +34,7 @@ margin: auto;
 .footer {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 15px;
 }
 
 .footer .error {
