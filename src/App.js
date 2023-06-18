@@ -5,6 +5,8 @@ import 'bootstrap/dist/css/bootstrap.css';
 import Home from "./components/Home/Home";
 import Login from "./components/Login/Login";
 import Signup from "./components/Signup/Signup";
+import Reset from "./components/Signup/Reset.js";
+
 
 
 import "./App.css";
@@ -26,6 +28,7 @@ function App() {
         <Routes>
           <Route path="/MyFitnesspal" element={<Login />} />
           <Route path="/MyFitnesspal/signup" element={<Signup onSignup={handleSignup} />} />
+          <Route path="/MyFitnesspal/reset" element={<Reset/>} />
           <Route path="/MyFitnesspal/home" element={<Home values={values}/>}  />
             </Routes>
           

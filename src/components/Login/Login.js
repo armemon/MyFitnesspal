@@ -71,6 +71,11 @@ function Login() {
             Login
           </button>
           <p>
+            <span>
+          <Link to="/MyFitnesspal/reset">Forgot Password?</Link>
+            </span>
+          </p>
+          <p>
             Already have an account?{" "}
             <span>
               <Link to="/MyFitnesspal/signup">Sign up</Link>
